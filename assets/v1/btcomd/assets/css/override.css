@@ -1,0 +1,302 @@
+﻿
+/* CSS Document - to be used for emergency override only */
+
+/* ad take over cookie fix
+#cookieNotification { right: 350px!important; }*/
+
+/* cookie lightbox link amend */
+#cookieFooter a {
+	font-size: 100%;
+}
+/* Show christmas theme 
+body.btcom {
+	background: url("//s/assets/images/xmas/christmas_background.jpg") #edf0f2 no-repeat center 0;
+}
+#mega-panel .xmas-menu, #mega-panel .xmas-robin{display:block;}
+*/
+/* hides 'Sport' labels from modules */
+.invisible .label { display: none;}
+
+/*  Make BT your homepage module START */
+.set_bthomepage { padding-bottom: 16px; }
+.ebay_amazon { float: left; }
+.amazonIcon {
+	width: 21px;
+	margin-left: 7px;
+}
+.ebayIcon {
+	width: 47px;
+	margin-left: 2px;
+}
+.homepageSet { float: left;
+	background-color: #E6E6E6;
+	border-radius: 5px;
+	padding: 5px 2px;
+	margin-left:10px;
+}
+.homepageSet a {
+	color: #666;
+	font-family: "NewBT Regular";
+	font-size: 1em;
+}
+.homepageSet span {
+    background: url("../images/bthomepage_sprite.png") no-repeat scroll 0 -64px;
+    height: 20px;
+    width: 15px;
+    padding-left: 22px;
+}
+.ie7 .homepageSet span { display: inline-block; }
+/* ebay/amazon tooltips */
+.ebay_amazon a.tooltip {
+	position:relative;
+}
+.ebay_amazon a.tooltip:hover {
+	text-decoration:none;
+}
+/* tooltip box */
+.ebay_amazon a.tooltip:after{
+	content: attr(tip);
+	line-height:1em;
+	color:#fff;
+	text-align: center;
+	width:50px;
+	padding:5px 10px;
+	background:#494949;
+	display:none;
+	position:absolute;
+	top:25px;
+	left:-10px;
+
+	/* CSS 3 */
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+
+	-moz-box-shadow: 3px 3px 4px rgba(0,0,0, .65);
+	-webkit-box-shadow: 3px 3px 4px rgba(0,0,0, .65);
+	box-shadow: 3px 3px 4px rgba(0,0,0, .65);
+}
+.ebay_amazon a.tooltip:hover{
+	z-index:1000;
+	position:relative;
+	color:#8325f7;
+}
+.ebay_amazon a.tooltip:hover:after{
+	display:block;
+}
+/* tooltip arrow */
+.ebay_amazon a.tooltip:before{
+	z-index:100;
+	position:absolute;
+	content:"";
+	top:20px;
+	left:15px;
+	display:none;
+
+	border-right:7px transparent solid;
+	border-bottom:7px #494949 solid;
+	border-left:7px transparent solid;
+}
+.ebay_amazon a.tooltip:hover:before{
+	display:block;
+}
+
+/* all devices except ipad landscape */
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+	.set_bthomepage { display none; }
+}
+/*  Make BT your homepage module END */
+
+/* What's on BT Sport START */
+.btcom_bts_whatson {
+	margin-bottom: 16px;
+	border: 1px solid #D8D8D8;
+    box-shadow: 1px 2px 5px 0 #D7D7D7;
+}
+.btcom_bts_whatson .bts-opta .opta-title {
+    background: #414141;
+    box-shadow: 0 2px 4px 1px rgba(65, 65, 65, 0.8);
+    color: #FFFFFF;
+    font-size: 1.125em;
+    font-weight: bold;
+    margin-bottom: -10px;
+    padding: 20px 0 20px 20px;
+    position: relative;
+    z-index: 10;
+}
+.btcom_bts_whatson .bts-opta .opta-footer {
+    background-color: #E5E5E5;
+    border: 1px solid #FFFFFF;
+}
+.btcom_bts_whatson .bts-opta .opta-footer a {
+    background: url("../../../../../s/assets/images/bts-opta.png") no-repeat scroll right 15px rgba(0, 0, 0, 0);
+    color: #000000;
+    display: block;
+    float: right;
+    font-size: 1em;
+    margin-right: 0;
+    padding: 12px 21px 14px 0;
+}
+.mbst-nan .mbst-nan-prog-desc { height: 38px; padding-bottom: 2px; }
+/* What's on BT Sport END */
+
+/* New PNS flyout START */
+
+#menu-wrapper .pns_new_flyout p { font-size: 1em!important; } /* missing from header.css file - needs to be added */
+
+/* New PNS flyout END */
+
+/* Permanent fix to go with R9 */
+.article-left .quotes q {
+	display: block;
+	font-size: 4em;
+	margin-bottom: -10px;
+	margin-left: -4px;
+	margin-top: 42px;
+	font-family:"NewBT Regular";
+}
+
+/* Dante-1497 fix */
+.picture-gallery .house-rules {
+	margin-top:0;
+}
+
+/* Gutter advert z-index fix */
+/* Desktops and laptops */
+@media only screen and (min-width : 1024px) {
+
+	#cookiesToolbar {
+		position: relative;
+	}
+	#footer-wrapper {
+		height: 62px;
+	}
+
+}
+
+/* Windows phone fix */
+@media only screen and (max-device-width:700px) {
+	.loginbody.container{width:auto !important;}
+}
+
+/* Remove Press Association Logo */
+#advert-small-top {
+	width:100%;
+	display:none;
+}
+
+/* TM_4800 */
+/* START Ã¢â‚¬â€œ TO BE ADDED BUT REMOVED ON 1st OCTOBER */
+.simple-article-right {
+	display: none;
+}
+
+.article-body {
+	width: 95% !important;
+}
+
+.main-article p {
+	font-family: "Tahoma", "Geeza Pro";
+	font-size: 1em;
+	line-height: 1.5em;
+}
+.main-article .article-left {
+	font-family: "Tahoma", "Geeza Pro";
+}
+
+.article-body {
+	font-family: "Tahoma", "Geeza Pro";
+}
+
+.article-body a {
+	font-family: "Tahoma", "Geeza Pro";
+}
+
+.main-article .article-left h2 {
+	font-size: 23px;
+	color: #1C1A1A;
+	line-height: 1.45em;
+}
+.main-article .article-left h3 {
+	font-size: 20px;
+	color: #1C1A1A;
+	line-height: 1.5em;
+}
+.main-article .article-left h4 {
+	font-size: 18px;
+	color: #1C1A1A;
+	line-height: 1.5em;
+}
+.main-article .article-left h5 {
+	font-size: 15px;
+	color: #1C1A1A;
+	line-height: 1.5em;
+}
+.main-article .article-left h6 {
+	font-size: 12px;
+	color: #1C1A1A;
+	line-height: 1.5em;
+}
+.main-article .article-left ul, .main-article .article-left ol {
+	margin-left: 20px;
+}
+.list-block li span{
+	font-family: "Tahoma", "Geeza Pro";
+	line-height: 1.4em;
+	color: #1C1A1A;
+}
+
+.article-body .data-table table {
+	font-size: 1em;
+}
+.article-body .data-table table tr:nth-child(odd) {
+	background: none;
+}
+.article-body .data-table table tr:nth-child(even) {
+	background: none;
+}
+.article-body .data-table td {
+	border-left: 0px;
+}
+
+/* Love Money feed tables */
+.article-body table {
+	font-size: 0.8em;
+	border-collapse: separate;
+}
+.article-body table tr:nth-child(odd) {
+	background: #EEE;
+}
+.article-body table tr:nth-child(even) {
+	background: #FFF;
+}
+table, th, td {
+	border: 0px solid transparent;
+}
+
+.main-article .article-left ul li {
+	margin-left: 18px;
+}
+.main-article .article-left ol li {
+	margin-left: 18px;
+}
+/* END - TO BE ADDED BUT REMOVED ON 1st OCTOBER */
+
+/* START - TM_5147 */
+body.bt-wifi #menu-wrapper div.brdcrmb { display: none; }
+/* END - TM_5147 */
+
+/* START - TM_5220 */
+body.bt-wifi #menu-wrapper div.brdcrmb, body.bt-wifi #menu-wrapper #pri-sec-nav { display: none; }
+/* END - TM_5220 */
+
+/* START Re-aliging IFRAME WIDTH POST R23 release */
+.article-body iframe, .article-body .fb_iframe_widget {
+	width:100% !important;              
+}
+/* END Re-aliging IFRAME WIDTH POST R23 release */
+
+.main-section {
+	margin: 0 0 15px 0 !important;
+	position: relative;
+}
